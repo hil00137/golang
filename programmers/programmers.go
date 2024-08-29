@@ -38,3 +38,17 @@ func Sol181941(arr []string) string {
 	}
 	return result
 }
+
+// Sol181924 arr 에 들어있는 배열을 queries 를 통해 변경하여 반환
+func Sol181924(arr []int, queries [][]int) []int {
+	//  길이가 같은 새로운 배열생성
+	result := make([]int, len(arr))
+	// 배열 복사 (new, origin)
+	copy(result, arr)
+	for _, query := range queries {
+		first := query[0]
+		second := query[1]
+		result[first], result[second] = result[second], result[first]
+	}
+	return result
+}
