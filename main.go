@@ -4,5 +4,5 @@ package main
 import "golang/programmers"
 
 func main() {
-	programmers.Sol181952()
+	programmers.Sol181949()
 }
