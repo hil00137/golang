@@ -4,5 +4,5 @@ package main
 import "golang/programmers"
 
 func main() {
-	programmers.Sol181949()
+	programmers.Sol181941([]string{"a", "b", "c"})
 }

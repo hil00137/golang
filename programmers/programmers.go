@@ -29,3 +29,12 @@ func Sol181949() {
 	}
 	fmt.Println(string(result))
 }
+
+func Sol181941(arr []string) string {
+	var result string
+
+	for _, data := range arr {
+		result += data
+	}
+	return result
+}
